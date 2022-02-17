@@ -1,0 +1,17 @@
+#sdg_login_view{
+    width: 20%;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+#sdg_login_view form{
+    width: 100%;
+}
+#sdg_login_view .sdg_input_text{
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
