@@ -4,14 +4,23 @@ import './asset/style/login.css'
 
 function ContentLogin() {
     return (
-        <div id="sdg_slider_in">
+        <div className="sdg_slider_in_from_right">
             <div id='sdg_login_view'>
                 <form  autoComplete="off" action="login" method="POST">
-                    <div>
-                        <input type="text"  name="s" className="sdg_input_text"
-                               placeholder="Insert email."  />
-                        <input type="submit" title='Continue' className="hide_text" value="Search"/>
-                    </div>
+                    <input type="text"  name="s" className="sdg_input_text"
+                           placeholder="Insert email."  />
+                    <button className="sdg_login_btn_submit" type="submit">
+                        Start with email
+                        <span className="sdg_arrow_container">
+                            <i className="fas fa-arrow-right sdg_left_right_animation"></i>
+                        </span>
+                    </button>
+                    <button className="sdg_login_btn_submit" >
+                        Start anonymously
+                        <span className="sdg_arrow_container">
+                            <i className="fas fa-arrow-right sdg_left_right_animation"></i>
+                        </span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -19,7 +28,8 @@ function ContentLogin() {
 }
 
 let component = null;
-function LoginCheck(route) {
+function LoginCheck() {
+    let route = window.location.pathname;
     if(component === null)
         component =  document.getElementById('sdg_body')
     if(localStorage.getItem('user') === null){

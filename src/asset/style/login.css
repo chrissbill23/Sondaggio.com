@@ -1,5 +1,5 @@
+
 #sdg_login_view{
-    width: 20%;
     height: 30vh;
     margin: auto;
     display: flex;
@@ -7,11 +7,47 @@
     padding-top: 2rem;
 }
 #sdg_login_view form{
-    width: 100%;
+    min-width: 30vw;
 }
 #sdg_login_view .sdg_input_text{
     width: 100%;
     display: block;
     margin-bottom: 1em;
+    font-size: 1.1em;
+}
+.sdg_login_btn_submit{
+    display: block;
+    width: 40%;
+    height: 2.4rem;
     font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem auto;
+}
+
+@media (max-width: 1500px) {
+    #sdg_login_view form{
+        min-width: 40vw;
+    }
+}
+@media (max-width: 1280px) {
+    #sdg_login_view form{
+        min-width: 50vw;
+    }
+}
+@media (max-width: 990px) {
+    #sdg_login_view form{
+        min-width: 70vw;
+    }
+}
+@media (max-width: 650px) {
+    #sdg_login_view form{
+        min-width: 90vw;
+    }
+}
+@media (max-width: 480px) {
+    .sdg_login_btn_submit{
+        width: 80%;
+    }
 }

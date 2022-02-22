@@ -1,6 +1,6 @@
-import './asset/style/insertionform.css'
+
 import React from "react";
-export default function MainView() {
+function InsertionForm() {
     return (
         <div className="sdg_slider_in_from_right">
             <div id='sdg_add_survey_view'>
@@ -12,3 +12,4 @@ export default function MainView() {
     );
 }
 
+export default InsertionForm;
